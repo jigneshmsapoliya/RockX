@@ -1,0 +1,373 @@
+/* Developed by Jignesh Sapoliya, Lakshit Gajera, Nikhil Lathiya, Jaydip Talaviya */
+/*Colour Pallet :  dark indigo #2C2C54, deep purple-gray #474787, cool gray #AAABB8, light gray #ECECEC */
+.loader {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-fluid {
+    background-color: #2C2C54;
+    color: white;
+    padding: 1% 7% 1%;
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.3);
+}
+
+.navigation {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 10%;
+    color: white;
+}
+
+.navbar {
+    padding: 0 1rem 4.5rem 0;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.logo {
+    font-family: Ubuntu;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item {
+    font-size: 1rem;
+    padding: 0 18px;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+/* home */
+.home-container {
+    background-color: #474787;
+}
+
+.home-content {
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 80vh;
+    margin-bottom: -50px;
+    align-items: center;
+}
+
+.HomeText h1 {
+    font-weight: 600;
+    font-size: 38px;
+    letter-spacing: 0.7px;
+    padding-top: 10px;
+    color: aqua;
+    font-family: "Raleway", sans-serif;
+}
+
+img.rounded {
+    width: 100%;
+    border-radius: 50%;
+    padding: 10%;
+
+}
+
+.TypeEffect {
+    padding: 25px 0px;
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: 0.6px;
+    color: azure;
+    font-family: "Raleway", sans-serif;
+}
+
+@media (max-width: 900px) {
+    .home-content {
+        display: block;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .HomeText {
+        text-align: left;
+        display: inline-block;
+    }
+
+    img.rounded {
+        margin: auto;
+        margin-bottom: 50px;
+    }
+}
+
+/* about team */
+.AboutPage {
+    display: flex;
+    justify-content: space-around;
+    min-height: 80vh;
+    margin-top: 100px;
+    align-items: center;
+    padding: 25px;
+}
+
+.AboutText {
+    width: 50%;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+    padding: 5%;
+    color: azure;
+    margin-bottom: 100px;
+}
+
+.AboutTextHeading {
+    font-size: 35px;
+    font-weight: 600;
+    padding-bottom: 40px;
+}
+
+.AboutText b {
+    color: #40c4ca;
+    font-weight: bold;
+}
+
+.AboutText p {
+    margin-bottom: 20px;
+    color: azure;
+}
+
+.Avatar {
+    width: 50%;
+    border-radius: 20px;
+    padding: 10%;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 900px) {
+    .AboutPage {
+        display: block;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .AboutText {
+        text-align: left;
+        display: inline-block;
+        width: 100%;
+        line-height: 24px;
+        letter-spacing: 0.6px;
+        margin-bottom: 80px;
+    }
+
+    .AboutTextHeading {
+        font-size: 26px;
+    }
+
+    .Avatar {
+        width: 200px;
+        margin-bottom: 75px;
+    }
+}
+
+/* About Team */
+.aboutus-container {
+    background-color: #474787;
+    min-height: 80vh;
+}
+
+.about-container {
+    padding: 40px 20px;
+}
+
+.team-heading {
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: "Raleway", sans-serif;
+    color: azure;
+    font-weight: bold;
+}
+
+.team-card {
+    transition: 0.5s;
+    border-radius: 25px;
+}
+
+.team-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(254, 253, 253, 0.2);
+}
+
+.team-card-image {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+
+
+}
+
+/* Skill Expertise */
+.skill-container {
+    background-color: #474787;
+    min-height: 80vh;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 10%;
+}
+
+.skillBox {
+    width: max(15%, 150px);
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 25px 25px 0px;
+    color: azure;
+    border: 3px solid #AAABB8;
+    font-size: 64px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.skillBox:hover {
+    transform: scale(1.2);
+    box-shadow: 0 2px 8px 0 #AAABB8;
+}
+
+.skillsHeading {
+    margin: 50px 10px;
+    font-size: 36px;
+    letter-spacing: 0.6px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: "Raleway", sans-serif;
+    color: azure;
+    font-weight: bold;
+}
+
+/* Our Products */
+.OurProducts {
+    background-color: #474787;
+    min-height: 90vh;
+    width: 100%;
+}
+
+.projectHeading {
+    text-align: center;
+    padding: 50px 0;
+    letter-spacing: 0.4px;
+    font-size: 36px;
+    font-family: "Raleway", sans-serif;
+    color: azure;
+    font-weight: bold;
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0px 5%;
+}
+
+.projectBox {
+    width: 350px;
+    border: 3px solid #AAABB8;
+    color: azure;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0px 25px 50px 25px;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projectBox:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px 0 #AAABB8;
+}
+
+.projectPhoto {
+    display: block;
+    width: 250px;
+    height: 200px;
+    object-fit: fill;
+    margin: 20px 0px;
+    align-self: center;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+.productTitle {
+    font-family: "Raleway", sans-serif;
+    color: azure;
+    font-weight: bold;
+}
+
+.projectbtn {
+    font-size: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40%;
+    margin: 25px 3% 0;
+    border-radius: 5px;
+    background-color: #431f47;
+    color: #e7e7e7;
+    height: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    border-style: none;
+}
+
+/* Footer */
+.footer-container {
+    background-color: #2C2C54;
+    color: white;
+}
+
+footer {
+    width: 100%;
+    letter-spacing: 0.5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    bottom: 0px;
+    text-align: center;
+    padding: 1% 0%;
+}
+
+footer h4 {
+    font-weight: 500;
+}
+
+.footerLinks {
+    display: flex;
+    width: 180px;
+    font-size: 18px;
+    justify-content: space-evenly;
+}
+
+.footerLinks a {
+    text-decoration: none;
+    color: inherit;
+}
